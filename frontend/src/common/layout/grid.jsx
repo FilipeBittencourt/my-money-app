@@ -10,8 +10,7 @@ export default class Grid extends Component {
         )
     }
 }
-*/
- 
+*/ 
 
 export default props => (
     <div className='col-xs-12 col-ms-5 col-md-4'>
