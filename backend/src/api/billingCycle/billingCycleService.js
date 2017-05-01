@@ -39,4 +39,21 @@ BillingCycle.route('summary', (resquest, response, next) => {
         })
 })
 
-module.exports = BillingCycle
+const Filipe = (resquest, response, next) =>{
+    BillingCycle.aggregate({
+        $project: { credit: { $sum: "$credits.value" }, debt: { $sum: "$debts.value" } }
+    }, {
+            $group: { _id: null, credit: { $sum: "$credit" }, debt: { $sum: "$debt" } }
+        }, {
+            $project: { _id: 0, credit: 1, debt: 1 }
+        }, (error, result) => {
+            if (error) {
+                response.json({ erros: [error] })
+            } else {
+                response.json(result[0] || { credit: 0, debt: 0 })
+            }
+        })
+}
+
+
+module.exports = {BillingCycle, Filipe}
