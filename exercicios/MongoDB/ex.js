@@ -97,6 +97,8 @@ db.dropDatabase()
 
 
 ////
-
-
+use theglint
+db.users.find()
 db.users.remove({email:"filipe@sisnet.com.br"})
+"token" : "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI1OTAzYTI4Yzc4MGU5Njc0MWYwYWU2NWMiLCJleHAiOjE0OTQwMTUyNDQxOTJ9.n-g59sLj0kBW6VNmjAHvdEyea9M8cswvnH9uajiunI4",
+ 
