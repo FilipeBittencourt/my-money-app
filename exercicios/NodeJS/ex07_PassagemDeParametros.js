@@ -2,6 +2,10 @@ module.exports =  function(parametro){
     console.log(`O parametro informdao foi ${parametro}`)
 }
 
+module.exports =  function Teste1() {    
+    return 'xalala';
+}
+
 /*
 function Teste1() {    
     return 'xalala';

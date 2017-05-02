@@ -69,21 +69,15 @@ db.billingcycles.aggregate([{
 }])
 
 //update
-db.billingcycles.update(
-    {$and: [{ month: 1}, { years: 2017 }] },
-    {$set:{credits:[{name:"Salário", value:5000}]}}
-)
+db.billingcycles.update({$and: [{ month: 1}, { years: 2017 }] }, {$set:{credits:[{name:"Salário", value:5000}]}})
+//UPDATE com ID
+db.experiences.update({"_id" : ObjectId("58f651417b8a61601690c546")},{$set: {name: 'aaa'}})
+
 
 //save - O SAVE muda o documento quando se passa a chave. Do contrario ele faz insert também.
 db.billingcycles.save({ name: "xxxx", month: 5, years: 2020 })
-
-db.billingcycles.save( 
- {"_id" : ObjectId("58e2460ca591954402d36ef4"), "name":"Filipe"} 
-)
-
-db.billingcycles.save(
-{"_id" : ObjectId("58e2460ca591954402d36ef4"), "name": "xxxx", "month": 5, "years": 2020 }
-)
+db.billingcycles.save( {"_id" : ObjectId("58e2460ca591954402d36ef4"), "name":"Filipe"})
+db.billingcycles.save({"_id" : ObjectId("58e2460ca591954402d36ef4"), "name": "xxxx", "month": 5, "years": 2020 })
 
 //REMOVE
 
@@ -99,6 +93,15 @@ db.dropDatabase()
 ////
 use theglint
 db.users.find()
+db.experiences.find()
 db.users.remove({email:"filipe@sisnet.com.br"})
+//eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI1OGU3ZmU1NzhlMmEzYzM4MjQxNjhiZTQiLCJleHAiOjE0OTIyMDM3MzU1NjB9.zXjg1ErEQOslnGIIhMJDd15VjjE7XHiSOfDh-SyTFZA
 "token" : "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI1OTAzYTI4Yzc4MGU5Njc0MWYwYWU2NWMiLCJleHAiOjE0OTQwMTUyNDQxOTJ9.n-g59sLj0kBW6VNmjAHvdEyea9M8cswvnH9uajiunI4",
+MKLINK /D "C:\Repositories\Sisnet\theglint-backend\theglint-app-server\node_modules\theglint-core" "C:\Repositories\Sisnet\theglint-backend\theglint-core"
+
+  
+
+//UPDATE com ID
+db.experiences.update({"_id" : ObjectId("59089119e828ed9818640554")},{$set: {status: 'published'}})
+db.experiences.remove({"_id" : ObjectId("58f651417b8a61601690c546")})
  

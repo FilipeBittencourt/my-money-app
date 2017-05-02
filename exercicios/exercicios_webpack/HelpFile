@@ -1,0 +1,33 @@
+abrir o terminal e digitar:
+1 - mongod       
+2 - npm run dev (no diretorio da aplicação)
+
+cd C:\Repositories\_LABORATORIO\CURSO_UDEMY\curso-react-redux\my-money-app\frontend
+cd C:\Repositories\_LABORATORIO\CURSO_UDEMY\curso-react-redux\my-money-app\backend
+cd C:\Repositories\_LABORATORIO\CURSO_UDEMY\exercicios_webpack
+cd C:\Users\Filipe\Desktop\exercicios_webpack
+
+npm i --save-dev webpack@1.14.0 webpack-dev-server@1.16.2
+
+
+--------EXECUTANDO O WEBPACK----------
+./node_modules/.bin/webpack
+
+
+--------BAIXANDO BABEL ----------
+Ele é um compilador de JavaScript. 
+Ele consegue transformar um código escrito com as especificações do ES6 em algo que o Node.js possa entender completamente.
+
+npm i --save-dev babel-core@6.22.1 babel-loader@6.2.10 babel-preset-es2015@6.22.0
+
+npm i --save-dev babel-plugin-transform-object-rest-spread@6.22.0
+
+
+--------REACT ----------
+npm i --save-dev react@15.4.2
+npm i --save-dev babel-preset-react@6.22.0
+npm i --save-dev extract-text-webpack-plugin@1.0.1 style-loader@0.13.1 css-loader@0.26.1
+
+
+cd C:/Users/Filipe/Desktop/Curso/Sisnet
+git clone https://github.com/theglint/theglint-web-app
