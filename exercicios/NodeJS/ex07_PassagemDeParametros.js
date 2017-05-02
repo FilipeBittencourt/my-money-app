@@ -1,38 +1,33 @@
-module.exports =  function(parametro){
-    console.log(`O parametro informdao foi ${parametro}`)
+//só pode ter um  <<  module.exports >> do modelo abaixo a funcção fica sem um NOME para ser chamada.
+/*module.exports = function (parametro) {
+  console.log(`O parametro informdao foi ${parametro}`);
+};*/
+
+function Teste0(parametro) {
+  //console.log(`O parametro informdao foi ${parametro}`);
+  return `O parametro informdao foi ${parametro}`;
 }
 
-module.exports =  function Teste1() {    
-    return 'xalala';
+function Teste1() {
+  return "Teste1";
 }
 
-/*
-function Teste1() {    
-    return 'xalala';
-}
-
-const Teste2 = () => {
-        return (
-        {
-            "name": "filipe",
-            "email": "filipe@sisnet.com.br",
-            "password": "123456"
-        }
-    )
-}
-
-module.exports = {Teste1, Teste2 }
-
-*/
-
-
-/*
-module.exports.listUser = function listUser() {
-          return (
-        {
-            "name": "filipe",
-            "email": "filipe@sisnet.com.br",
-            "password": "123456"
-        }
+const Teste2 = name => {
+  return {
+    name: name,
+    email: "filipe@sisnet.com.br",
+    password: "123456"
+  };
 };
-*/
+
+function Teste3() {
+  return "Teste3";
+}
+
+const Teste4 = () => {
+  return {
+    email: "filipe@sisnet.com.br"
+  };
+};
+
+module.exports = { Teste0, Teste1, Teste2, Teste3, Teste4 };
