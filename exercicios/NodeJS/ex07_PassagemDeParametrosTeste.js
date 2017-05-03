@@ -15,6 +15,7 @@ console.log(result3);
 
 const result4 = moduloComoParametro.Teste4();
 console.log(result4);
+
  
 
 //node ex07_PassagemDeParametrosTeste
