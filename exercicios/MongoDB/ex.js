@@ -98,7 +98,7 @@ db.users.remove({email:"filipe@sisnet.com.br"})
 //eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI1OGU3ZmU1NzhlMmEzYzM4MjQxNjhiZTQiLCJleHAiOjE0OTIyMDM3MzU1NjB9.zXjg1ErEQOslnGIIhMJDd15VjjE7XHiSOfDh-SyTFZA
 "token" : "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI1OTAzYTI4Yzc4MGU5Njc0MWYwYWU2NWMiLCJleHAiOjE0OTQwMTUyNDQxOTJ9.n-g59sLj0kBW6VNmjAHvdEyea9M8cswvnH9uajiunI4",
 MKLINK /D "C:\Repositories\Sisnet\theglint-backend\theglint-app-server\node_modules\theglint-core" "C:\Repositories\Sisnet\theglint-backend\theglint-core"
-
+MKLINK /D "C:\_REPOSITORIES\GIT-SISNET\theglint-backend\theglint-app-server\node_modules\theglint-core" "C:\_REPOSITORIES\GIT-SISNET\theglint-backend\theglint-core"
   
 
 //UPDATE com ID
