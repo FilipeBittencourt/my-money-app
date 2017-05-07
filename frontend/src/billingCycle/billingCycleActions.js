@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { toastr } from 'react-redux-toastr'
+//Se apagar o "resetForm" o formulário não vem mais preenchido. Não entendi essa.
 import { reset as resetForm, initialize } from 'redux-form'
 import { showTabs, selectTab } from '../common/tab/tabActions'
 
@@ -62,6 +63,16 @@ export function showUpdate(billingCycle) {
         initialize('billingCycleForm', billingCycle)
     ]
 }
+
+
+export function showDelete(billingCycle) {
+    return [
+        selectTab('tabDelete'),
+        showTabs('tabDelete'),
+        initialize('billingCycleForm', billingCycle)
+    ]
+}
+
 
 export function init() {
     return [

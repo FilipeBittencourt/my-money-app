@@ -9,7 +9,7 @@ import TabsHeaderItens from '../common/tab/tabsHeaderItens'
 import TabsContent from '../common/tab/tabsContent'
 import TabsContentItens from '../common/tab/tabsContentItens'
 import { selectTab, showTabs } from '../common/tab/tabActions'
-import { create, update } from './billingCycleActions'
+import { create, update, remove } from './billingCycleActions'
 import List from './billingCycleList'
 import Form from './billingCycleForm'
 
@@ -36,10 +36,10 @@ class BillingCycle extends Component {
                         <TabsContent>
                             <TabsContentItens id='tabList'> 
                                 <List />
-                            </TabsContentItens>
-                            <TabsContentItens id='tabCreate'> <Form onSubmit={this.props.create}/> </TabsContentItens>
-                            <TabsContentItens id='tabUpdate'> <Form onSubmit={this.props.update}/> </TabsContentItens>
-                            <TabsContentItens id='tabDelete'> <h1>Excluir</h1></TabsContentItens>
+                            </TabsContentItens>   
+                            <TabsContentItens id='tabCreate'> <Form onSubmit={this.props.create} submitClass='primary' submitLabel='Incluir'/> </TabsContentItens>
+                            <TabsContentItens id='tabUpdate'> <Form onSubmit={this.props.update} submitClass='info' submitLabel='Alterar'/> </TabsContentItens>
+                            <TabsContentItens id='tabDelete'> <Form onSubmit={this.props.remove} submitClass='danger' submitLabel='Remover' readOnly={true}/></TabsContentItens>
                         </TabsContent>
                     </Tabs>
                 </Content>
@@ -48,6 +48,6 @@ class BillingCycle extends Component {
     }
 }
 
-const mapDispatchToProps = dispatch => bindActionCreators({selectTab, showTabs, create, update}, dispatch)
+const mapDispatchToProps = dispatch => bindActionCreators({selectTab, showTabs, create, update, remove}, dispatch)
 export default connect(null, mapDispatchToProps)(BillingCycle)
  
