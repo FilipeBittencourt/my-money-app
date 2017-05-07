@@ -94,7 +94,8 @@ db.dropDatabase()
 use theglint
 db.users.find()
 db.experiences.find()
-db.users.remove({email:"filipe@sisnet.com.br"})
+db.users.remove({email:"fsbvieira@gmail.com"})
+db.users.remove({email:"filipeicr@hotmail.com"})
 //eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI1OGU3ZmU1NzhlMmEzYzM4MjQxNjhiZTQiLCJleHAiOjE0OTIyMDM3MzU1NjB9.zXjg1ErEQOslnGIIhMJDd15VjjE7XHiSOfDh-SyTFZA
 "token" : "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI1OTAzYTI4Yzc4MGU5Njc0MWYwYWU2NWMiLCJleHAiOjE0OTQwMTUyNDQxOTJ9.n-g59sLj0kBW6VNmjAHvdEyea9M8cswvnH9uajiunI4",
 MKLINK /D "C:\Repositories\Sisnet\theglint-backend\theglint-app-server\node_modules\theglint-core" "C:\Repositories\Sisnet\theglint-backend\theglint-core"
@@ -102,8 +103,9 @@ MKLINK /D "C:\_REPOSITORIES\GIT-SISNET\theglint-backend\theglint-app-server\node
   
 
 //UPDATE com ID
-db.experiences.update({"_id" : ObjectId("59089119e828ed9818640554")},{$set: {status: 'published'}})
+db.experiences.update({"_id" : ObjectId("59078a1083928580064deff0")},{$set: {status: 'published'}})
+
 db.experiences.remove({"_id" : ObjectId("58f651417b8a61601690c546")})
 
 
-db.experiences.update({"_id" : ObjectId("59089119e828ed9818640554")},{$set: 	{"images": [         {                    "url": "https://theglint.s3.amazonaws.com/img-slide2.jpeg",           "updatedBy": "588fb0efe619278101a1aaa9",           "owner": "588fb0efe619278101a1aaa9",           "createdBy": "588fb0efe619278101a1aaa9",           "name": "img-slide2.jpeg",           "extension": "jpeg",           "updatedOn": "2017-02-12T14:23:04.004Z",           "createdOn": "2017-02-12T14:23:04.004Z",           "deleted": 0     } 	] }
+http://localhost:8000/api/auth/facebook
