@@ -18,10 +18,8 @@
     "mongoose": "^4.7.0",
     "mongoose-paginate": "^5.0.3",
     "node-restful": "^0.2.5",
-    "pm2": "^2.1.5"
-  },
-  "devDependencies": {
+    "pm2": "^2.1.5",
     "eslint": "^3.19.0",
     "nodemon": "^1.11.0"
-  }
+  }  
 }

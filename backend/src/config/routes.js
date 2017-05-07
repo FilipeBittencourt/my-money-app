@@ -8,5 +8,37 @@ module.exports = function(server) {
 
     // Rotas de Ciclo de Pagamento 
     const BillingCycle = require('../api/billingCycle/billingCycleService')
-    BillingCycle.register(router, '/billingCycle')
+    BillingCycle.register(router, '/billingCycles')
 }
+
+/*
+
+{  
+  "name": "Outubro/2017",
+  "month": 63,
+  "year": 1017,  
+  "debts": [
+    {
+      "name": "Telefone",
+      "value": 150.27,
+      "status": "PAGO"
+    },
+    {
+      "name": "Alugel",
+      "value": 750,
+      "status": "AGENDADO"
+    }
+  ],
+  "credits": [
+    {
+      "name": "Salario Empresa",
+      "value": 5000
+    },
+    {
+      "name": "Salario Freelancer",
+      "value": 2000
+    }
+  ]
+}
+
+*/

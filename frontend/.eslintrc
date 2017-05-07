@@ -1,6 +1,38 @@
-{
+ {
+  "ecmaFeatures": {
+    "modules": true,
+    "spread": true,
+    "restParams": true
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "no-unused-vars": 2,
+    "no-undef": 2,
+    "class-methods-use-this": 0,
+    "import/no-extraneous-dependencies": 0,
+    "linebreak-style": 0,
+    "react/jsx-filename-extension": 0,
+    "react/forbid-prop-types": 0,
+    "no-class-assign": 0,
+    "no-script-url": 0,
+    "max-len": "off"
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  }
+}
+
+ 
+/*{
   "extends": "airbnb",
   "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module"
+  },
   "rules": {
     "arrow-body-style": 0, // disabling to make it easier with nested promises
     "class-methods-use-this": 0,
@@ -18,4 +50,4 @@
     "window": false,
     "FB": false
   }
-}
+}*/
