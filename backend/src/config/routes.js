@@ -15,13 +15,13 @@ module.exports = function(server) {
 
 {  
   "name": "Outubro/2017",
-  "month": 63,
-  "year": 1017,  
+  "month": 10,
+  "year": 2017,  
   "debts": [
     {
       "name": "Telefone",
       "value": 150.27,
-      "status": "PAGO"
+      "status": "AGENDADO"
     },
     {
       "name": "Alugel",
